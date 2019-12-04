@@ -25,7 +25,9 @@ class Topic extends StatelessWidget {
   }
 
   List<Widget> _buildChildren() {
-    List<Widget> children = [Text(text, textAlign: textAlign, style: TextStyle(fontSize: fontSize))];
+    List<Widget> children = [
+      Text(text, textAlign: textAlign, style: TextStyle(fontSize: fontSize))
+    ];
     if (subtopics != null) {
       for (var subtopic in subtopics) {
         children.add(TopicSpace(space: 8.0));
