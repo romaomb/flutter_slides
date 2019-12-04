@@ -6,7 +6,7 @@ class TopicBox extends StatelessWidget {
     this.alignment = Alignment.topLeft,
     this.flex = 1,
     this.padding = const EdgeInsets.only(left: 120.0, top: 50.0),
-  }) : assert (topics != null);
+  }) : assert(topics != null);
 
   final int flex;
   final EdgeInsets padding;

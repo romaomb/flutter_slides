@@ -59,9 +59,9 @@ class _SliderListenerState extends State<SliderListener> {
               : downKeyCode;
 
       final nextKeyCode =
-      widget.behavior == SlideSwipeBehavior.useLeftAndRightKeys
-          ? rightKeyCode
-          : upKeyCode;
+          widget.behavior == SlideSwipeBehavior.useLeftAndRightKeys
+              ? rightKeyCode
+              : upKeyCode;
 
       if (data.keyCode == previousKeyCode) {
         widget.onKeyPressed(SlideAction.previous);

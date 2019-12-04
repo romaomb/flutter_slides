@@ -7,7 +7,7 @@ abstract class SlideBase extends StatelessWidget {
     this.titleFlex = 2,
     this.bodyFlex = 6,
     this.titleAlignment = Alignment.center,
-    this.behavior = SlideSwipeBehavior.useLeftAndRightKeys
+    this.behavior = SlideSwipeBehavior.useLeftAndRightKeys,
   });
 
   final int titleFlex;

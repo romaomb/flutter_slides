@@ -1,10 +1,10 @@
 name: flutter_slides
 description: Flutter Package to create presentations in Flutter for desktop.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/romaomb/flutter_slides
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: ">=2.5.0 <3.0.0"
 
 dependencies:
   flutter:
