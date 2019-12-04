@@ -1,5 +1,5 @@
 import 'package:flutter_slides/flutter_slides.dart';
-import 'package:flutter_slides/src/slides_presenter.dart';
+import 'package:flutter_slides/src/slide_presenter.dart';
 import 'package:flutter/material.dart';
 
 abstract class SlideBase extends StatelessWidget {
@@ -21,7 +21,7 @@ abstract class SlideBase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliderPresenter(
+    return SlidePresenter(
       behavior: behavior,
       child: Scaffold(
         body: Stack(

@@ -1,11 +1,11 @@
-import 'package:flutter_slides/src/slides_foundation.dart';
-import 'package:flutter_slides/src/slides_listener.dart';
-import 'package:flutter_slides/src/slides_provider.dart';
+import 'package:flutter_slides/src/slide_foundation.dart';
+import 'package:flutter_slides/src/slide_listener.dart';
+import 'package:flutter_slides/src/slide_provider.dart';
 import 'package:flutter_slides/anim/fade_transition_route.dart';
 import 'package:flutter/material.dart';
 
-class SliderPresenter extends StatelessWidget {
-  const SliderPresenter({
+class SlidePresenter extends StatelessWidget {
+  const SlidePresenter({
     @required this.child,
     @required this.behavior,
   })  : assert(child != null),
@@ -16,7 +16,7 @@ class SliderPresenter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliderListener(
+    return SlideListener(
       child: child,
       behavior: behavior,
       onKeyPressed: (SlideAction action) => _onKeyPressed(context, action),
@@ -24,7 +24,7 @@ class SliderPresenter extends StatelessWidget {
   }
 
   void _onKeyPressed(BuildContext context, SlideAction action) {
-    final manager = SliderProvider.of(context).manager;
+    final manager = SlideProvider.of(context).manager;
     final nextSlide = manager.handlerSliderAction(action);
     if (nextSlide != null) {
       Navigator.push(

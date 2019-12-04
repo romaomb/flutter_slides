@@ -11,7 +11,7 @@ void main() {
   _enablePlatformOverrideForDesktop();
 
   final slides = _getSlides();
-  final sliderManager = SliderManager(slides);
+  final sliderManager = SlideManager(slides);
 
   runApp(MyApp(slides, sliderManager));
 }
@@ -32,13 +32,13 @@ List<Slide> _getSlides() {
 
 class MyApp extends StatelessWidget {
   final List<Slide> slides;
-  final SliderManager sliderManager;
+  final SlideManager sliderManager;
 
   const MyApp(this.slides, this.sliderManager);
 
   @override
   Widget build(BuildContext context) {
-    return SliderProvider(
+    return SlideProvider(
       manager: sliderManager,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
