@@ -3,11 +3,12 @@ import 'package:flutter_slides/src/slides_presenter.dart';
 import 'package:flutter/material.dart';
 
 abstract class SlideBase extends StatelessWidget {
-  SlideBase(
-      {this.titleFlex = 2,
-      this.bodyFlex = 6,
-      this.titleAlignment = Alignment.center,
-      this.behavior = SlideSwipeBehavior.useLeftAndRightKeys});
+  SlideBase({
+    this.titleFlex = 2,
+    this.bodyFlex = 6,
+    this.titleAlignment = Alignment.center,
+    this.behavior = SlideSwipeBehavior.useLeftAndRightKeys,
+  });
 
   final int titleFlex;
   final int bodyFlex;
