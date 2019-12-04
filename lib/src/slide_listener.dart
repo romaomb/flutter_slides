@@ -1,4 +1,4 @@
-import 'package:flutter_slides/src/slides_foundation.dart';
+import 'package:flutter_slides/src/slide_foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -7,8 +7,8 @@ const upKeyCode = 116;
 const leftKeyCode = 123;
 const rightKeyCode = 124;
 
-class SliderListener extends StatefulWidget {
-  const SliderListener({
+class SlideListener extends StatefulWidget {
+  const SlideListener({
     @required this.child,
     @required this.behavior,
     @required this.onKeyPressed,
@@ -21,10 +21,10 @@ class SliderListener extends StatefulWidget {
   final SlideSwipeBehavior behavior;
 
   @override
-  _SliderListenerState createState() => _SliderListenerState();
+  _SlideListenerState createState() => _SlideListenerState();
 }
 
-class _SliderListenerState extends State<SliderListener> {
+class _SlideListenerState extends State<SlideListener> {
   final FocusNode _focusNode = FocusNode();
 
   @override
