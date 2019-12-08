@@ -5,11 +5,13 @@ abstract class SlideBase extends StatelessWidget {
   SlideBase({
     this.titleFlex = 2,
     this.bodyFlex = 6,
+    this.titleFontSize = 60.0,
     this.titleAlignment = Alignment.center,
   });
 
   final int titleFlex;
   final int bodyFlex;
+  final double titleFontSize;
   final Alignment titleAlignment;
 
   String title();
@@ -32,15 +34,16 @@ abstract class SlideBase extends StatelessWidget {
                     alignment: titleAlignment,
                     child: Text(
                       title(),
-                      style: TextStyle(fontSize: 60.0),
+                      style: TextStyle(fontSize: titleFontSize),
                       textAlign: TextAlign.center,
                     ),
                   ),
                 ),
-                Expanded(
-                  flex: bodyFlex,
-                  child: body(context),
-                )
+                if (bodyFlex != 0)
+                  Expanded(
+                    flex: bodyFlex,
+                    child: body(context),
+                  )
               ],
             ),
           ],

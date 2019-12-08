@@ -21,3 +21,8 @@ deprecated yet on stable channel.
 * Add Windows support.
 * Remove SlideSwipeBehavior, allowing both behaviors simultaneously.
 * Add `SlideKeys` to map next and previous keys for each platform.
+
+## [0.0.6] - 08-12-2019
+
+* Expose `titleFontSize` on `SlideBase`
+* Add condition to allow a slide without body when `bodyFlex = 0` is passed on the slide's constructor.
