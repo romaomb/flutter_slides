@@ -5,20 +5,14 @@ import 'package:flutter_slides/anim/fade_transition_route.dart';
 import 'package:flutter/material.dart';
 
 class SlidePresenter extends StatelessWidget {
-  const SlidePresenter({
-    @required this.child,
-    @required this.behavior,
-  })  : assert(child != null),
-        assert(behavior != null);
+  const SlidePresenter({@required this.child}) : assert(child != null);
 
   final Widget child;
-  final SlideSwipeBehavior behavior;
 
   @override
   Widget build(BuildContext context) {
     return SlideListener(
       child: child,
-      behavior: behavior,
       onKeyPressed: (SlideAction action) => _onKeyPressed(context, action),
     );
   }

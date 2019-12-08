@@ -5,11 +5,6 @@ enum SlideAction {
   previous,
 }
 
-enum SlideSwipeBehavior {
-  useLeftAndRightKeys,
-  useTopAndDownKeys,
-}
-
 class Slide {
   const Slide({@required this.route}) : assert(route != null);
   final Widget route;

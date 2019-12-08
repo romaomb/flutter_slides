@@ -1,4 +1,3 @@
-import 'package:flutter_slides/flutter_slides.dart';
 import 'package:flutter_slides/src/slide_presenter.dart';
 import 'package:flutter/material.dart';
 
@@ -7,13 +6,11 @@ abstract class SlideBase extends StatelessWidget {
     this.titleFlex = 2,
     this.bodyFlex = 6,
     this.titleAlignment = Alignment.center,
-    this.behavior = SlideSwipeBehavior.useLeftAndRightKeys,
   });
 
   final int titleFlex;
   final int bodyFlex;
   final Alignment titleAlignment;
-  final SlideSwipeBehavior behavior;
 
   String title();
   Widget background();
@@ -22,7 +19,6 @@ abstract class SlideBase extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SlidePresenter(
-      behavior: behavior,
       child: Scaffold(
         body: Stack(
           fit: StackFit.expand,
