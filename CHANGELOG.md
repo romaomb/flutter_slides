@@ -31,3 +31,7 @@ deprecated yet on stable channel.
 
 * Change return type of `title` in `SlideBase` to allow users to create any kind of widget.
 * Expose `SlideTitle` to keep accessible the old title widget.
+
+## [0.0.8] - 08-12-2019
+
+* Create `SlideTransitionType` to set the transition for each slide.

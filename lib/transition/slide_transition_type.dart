@@ -1,0 +1,4 @@
+enum SlideTransitionType {
+  fade,
+  size,
+}

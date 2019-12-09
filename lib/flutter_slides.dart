@@ -9,3 +9,4 @@ export 'package:flutter_slides/components/topic.dart';
 export 'package:flutter_slides/components/topic_box.dart';
 export 'package:flutter_slides/components/topic_space.dart';
 export 'package:flutter_slides/components/slide_title.dart';
+export 'package:flutter_slides/transition/slide_transition_type.dart';

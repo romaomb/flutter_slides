@@ -2,6 +2,8 @@ import 'package:flutter_slides/flutter_slides.dart';
 import 'package:flutter/material.dart';
 
 class FirstSlide extends SlideBase {
+  FirstSlide() : super(transitionType: SlideTransitionType.size);
+
   @override
   Widget title(BuildContext context) => SlideTitle('Flutter Slides');
 
