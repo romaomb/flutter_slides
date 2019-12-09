@@ -24,5 +24,10 @@ deprecated yet on stable channel.
 
 ## [0.0.6] - 08-12-2019
 
-* Expose `titleFontSize` on `SlideBase`
+* Expose `titleFontSize` on `SlideBase`.
 * Add condition to allow a slide without body when `bodyFlex = 0` is passed on the slide's constructor.
+
+## [0.0.7] - 08-12-2019
+
+* Change return type of `title` in `SlideBase` to allow users to create any kind of widget.
+* Expose `SlideTitle` to keep accessible the old title widget.

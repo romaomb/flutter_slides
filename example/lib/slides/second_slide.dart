@@ -4,7 +4,7 @@ import 'package:flutter_slides/flutter_slides.dart';
 
 class SecondSlide extends SlideBase {
   @override
-  String title() => 'Flutter Slides';
+  Widget title(BuildContext context) => SlideTitle('Flutter Slides');
 
   @override
   Widget background() =>

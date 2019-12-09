@@ -3,7 +3,7 @@ import 'package:flutter_slides/flutter_slides.dart';
 
 class ThirdSlide extends SlideBase {
   @override
-  String title() => 'Thank you!';
+  Widget title(BuildContext context) => SlideTitle('Thank you!');
 
   @override
   Widget background() => Container(

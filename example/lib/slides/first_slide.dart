@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class FirstSlide extends SlideBase {
   @override
-  String title() => 'Flutter Slides';
+  Widget title(BuildContext context) => SlideTitle('Flutter Slides');
 
   @override
   Widget background() =>
