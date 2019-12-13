@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_slides/src/slide_foundation.dart';
@@ -47,12 +48,15 @@ class _SlideListenerState extends State<SlideListener> {
     if (event.runtimeType == RawKeyUpEvent) {
       final pressedKeyCode = _getPressedKeyCode(event.data);
 
-      final previousKeyRange = Platform.isMacOS
-          ? SlideKeys.macPreviousKey
-          : SlideKeys.windowsPreviousKey;
+      final previousKeyRange = kIsWeb
+          ? SlideKeys.webPreviousKey
+          : Platform.isMacOS
+              ? SlideKeys.macPreviousKey
+              : SlideKeys.windowsPreviousKey;
 
-      final nextKeyRange =
-          Platform.isMacOS ? SlideKeys.macNextKey : SlideKeys.windowsNextKey;
+      final nextKeyRange = kIsWeb
+          ? SlideKeys.webNextKey
+          : Platform.isMacOS ? SlideKeys.macNextKey : SlideKeys.windowsNextKey;
 
       if (previousKeyRange.contains(pressedKeyCode)) {
         widget.onKeyPressed(SlideAction.previous);
@@ -62,7 +66,11 @@ class _SlideListenerState extends State<SlideListener> {
     }
   }
 
-  int _getPressedKeyCode(RawKeyEventData data) {
+  dynamic _getPressedKeyCode(RawKeyEventData data) {
+    if (kIsWeb) {
+      final RawKeyEventDataWeb web = data;
+      return web.code;
+    }
     switch (data.runtimeType) {
       case RawKeyEventDataMacOs:
         final RawKeyEventDataMacOs macOs = data;
