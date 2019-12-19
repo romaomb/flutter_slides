@@ -34,7 +34,8 @@ class FirstSlide extends SlideBase {
               ),
             ),
             TopicBox(
-              padding: const EdgeInsets.only(top: 80.0, right: 40.0, bottom: 50.0),
+              padding:
+                  const EdgeInsets.only(top: 80.0, right: 40.0, bottom: 50.0),
               topics: [
                 Topic(
                   'Fast Development',

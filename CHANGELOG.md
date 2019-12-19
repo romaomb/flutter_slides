@@ -35,3 +35,7 @@ deprecated yet on stable channel.
 ## [0.0.8] - 08-12-2019
 
 * Create `SlideTransitionType` to set the transition for each slide.
+
+## [0.0.9] - 18-12-2019
+
+* Add WEB support (thanks to @marceloneppel).
