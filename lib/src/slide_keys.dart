@@ -9,6 +9,14 @@ class SlideKeys {
     124, // keyboard right
   ];
 
+  static const webPreviousKey = [
+    'ArrowLeft', // keyboard left
+  ];
+
+  static const webNextKey = [
+    'ArrowRight', // keyboard right
+  ];
+
   static const windowsPreviousKey = [
     34, // slide presenter down
     37, // keyboard left

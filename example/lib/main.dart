@@ -17,7 +17,7 @@ void main() {
 }
 
 void _enablePlatformOverrideForDesktop() {
-  if (Platform.isWindows || Platform.isLinux) {
+  if (!kIsWeb && (Platform.isWindows || Platform.isLinux)) {
     debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
   }
 }
