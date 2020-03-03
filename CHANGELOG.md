@@ -39,3 +39,8 @@ deprecated yet on stable channel.
 ## [0.0.9] - 18-12-2019
 
 * Add WEB support (thanks to @marceloneppel).
+
+## [0.0.10] - 03-03-2020
+
+* Change `Navigator.isInitialRoute` to `window.defaultRouteName` due to the removal of the property
+on the new Navigator 2.0
