@@ -19,7 +19,9 @@ class SlideTransitionRoute<T> extends MaterialPageRoute<T> {
     Animation<double> secondaryAnimation,
     Widget child,
   ) =>
-      window.defaultRouteName == settings.name ? child : _getTransition(animation, child);
+      window.defaultRouteName == settings.name
+          ? child
+          : _getTransition(animation, child);
 
   Widget _getTransition(Animation<double> animation, Widget child) {
     switch (type) {

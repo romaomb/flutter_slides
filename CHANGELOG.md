@@ -43,4 +43,11 @@ deprecated yet on stable channel.
 ## [0.0.10] - 03-03-2020
 
 * Change `Navigator.isInitialRoute` to `window.defaultRouteName` due to the removal of the property
-on the new Navigator 2.0
+on the new Navigator 2.0.
+
+## [0.1.0] - 07-03-2020
+
+* Bump dart to `2.6.0`.
+* Fix deprecated `inheritFromWidgetOfExactType`.
+* Fix typo on `SlideTransitionRoute` file name.
+* 

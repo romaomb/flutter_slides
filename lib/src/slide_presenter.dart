@@ -1,4 +1,4 @@
-import 'package:flutter_slides/transition/sldie_transition_route.dart';
+import 'package:flutter_slides/transition/slide_transition_route.dart';
 import 'package:flutter_slides/transition/slide_transition_type.dart';
 import 'package:flutter_slides/src/slide_foundation.dart';
 import 'package:flutter_slides/src/slide_listener.dart';

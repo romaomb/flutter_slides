@@ -12,7 +12,7 @@ class SlideProvider extends InheritedWidget {
   final SlideManager manager;
 
   static SlideProvider of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(SlideProvider) as SlideProvider;
+    return context.dependOnInheritedWidgetOfExactType<SlideProvider>();
   }
 
   @override
