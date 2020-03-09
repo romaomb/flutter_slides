@@ -50,4 +50,8 @@ on the new Navigator 2.0.
 * Bump dart to `2.6.0`.
 * Fix deprecated `inheritFromWidgetOfExactType`.
 * Fix typo on `SlideTransitionRoute` file name.
-* 
+
+## [0.1.1] - 09-03-2020
+
+* Fix deprecated `TextTheme` on example app.
+* Expose `currentSlideIndex` to build slide counter.

@@ -3,6 +3,7 @@ import 'package:flutter_slides/src/slide_foundation.dart';
 class SlideManager {
   final List<Slide> slides;
   int _currentSlideIndex = 0;
+  int get currentSlideIndex => _currentSlideIndex;
 
   SlideManager(this.slides) : assert(slides != null);
 
