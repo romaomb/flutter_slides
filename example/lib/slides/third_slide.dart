@@ -6,7 +6,7 @@ class ThirdSlide extends SlideBase {
   Widget title(BuildContext context) => SlideTitle('Thank you!');
 
   @override
-  Widget background() => Container(
+  Widget background(_, __) => Container(
         child: Image.asset(
           'assets/see_ya.gif',
           fit: BoxFit.fill,

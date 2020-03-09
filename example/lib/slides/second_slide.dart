@@ -7,7 +7,7 @@ class SecondSlide extends SlideBase {
   Widget title(BuildContext context) => SlideTitle('Flutter Slides');
 
   @override
-  Widget background() =>
+  Widget background(_, __) =>
       Container(color: Colors.green.shade200.withOpacity(0.5));
 
   @override
